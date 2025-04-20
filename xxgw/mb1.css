@@ -1,0 +1,145 @@
+﻿*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color: #000;
+}
+a:hover{
+    color: #cd0200;
+}
+#top{
+    width: 1100px;
+    height: 120px;
+    margin: 0 auto;
+}
+#menu{
+    height: 58px;
+    background-color: #13619c;
+    line-height: 58px;
+
+}
+#menu ul{
+    width: 1100px;
+    margin: 0 auto;
+
+}
+#menu ul li{
+    width: 80px;
+    text-align: center;
+    float: left;
+    padding: 0 8px;
+    box-sizing:border-box;
+}
+#menu ul li:hover{
+    background-color: #949494;
+}
+#menu ul li a{
+    color: #fff;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+}
+#contents{
+    width: 1100px;
+    margin: 0 auto;
+    padding:20px 0;
+}
+
+.xwbt{
+    padding: 10px;
+    box-sizing:border-box;
+}
+.xwnr{
+    padding: 10px;
+    box-sizing:border-box;
+
+}
+
+
+.core1{
+    width: 1692px;
+    margin:0 auto;
+    height: 488px;
+    position: relative;
+    cursor: pointer;
+    /*border-radius: 12px;*/
+    overflow: hidden;
+}
+.core1 .core1xia{
+    width: 8460px;
+    height: 488px;
+    position: absolute;     
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+.core1 .core1xia img{
+    width: 1692px;
+    height: 488px;
+    float: left;
+}
+
+.core1 .coreleft,
+.core1 .coreright{
+    display: block;
+    height: 30px;
+    width: 20px;
+    line-height: 30px;
+    color: #fff;
+    background-color: rgb(0, 0, 0,.3);
+    text-align: center;
+    display: none;
+    font-size: 15px;
+}
+.core1 .coreleft{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    top: 230px;
+    left: 0;
+    
+}
+.core1 .coreleft:hover{
+    background-color: rgb(0, 0, 0,.5);
+}
+.core1 .coreright{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    top: 230px;
+    right: 0;
+}
+.core1 .coreright:hover{
+    background-color: rgb(0, 0, 0,.5);
+}
+.core1:hover .coreleft,
+.core1:hover .coreright{
+    display: block;
+}
+.core1 .corexia{
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    height: 13px;
+    text-align: center;
+    font-size: 0;
+    left: 50%;
+    margin-left: -39px;
+    background-color: rgba(255,255,255,.3);
+    
+}
+.core1 .corexia .coreli{
+    /*padding-top: 8px;*/
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    float: left;
+    margin: 3px;
+}
+.core1 .corexia .coreli1{
+    background-color:#ff5000 ;
+}
+

@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="mb_users.master.cs" Inherits="users_mb_users" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../mb1.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="top">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/top.png" style="width:880px;height:120px;float:left;margin-right: 55px;" />
+            <div style="float: left;padding: 0px 15px;padding-top: 43px;padding-bottom: 42px;">
+                <asp:Image ID="Image3" runat="server" ImageUrl="~/images/Touxiang.jpg" style="width:35px;height:35px;border-radius: 50%;float: left;"/>
+                <asp:Label ID="txtYonghu" runat="server" Text="Label" style="display: block;float: left;line-height: 35px;padding-left: 6px;"></asp:Label>
+            </div>
+            <asp:Button ID="Button1" runat="server" Text="注销" OnClick="Button1_Click" style="all:unset;padding: 3px 10px;background-color: #13619c;color: #fff;font-size: 12px;margin: 49px 0px;float: left;cursor: pointer;"/>
+        </div>
+        <div id="menu">
+            <ul>
+                <li style="width:25%"><a href="../index.aspx">返回首页</a></li>
+                <li style="width:25%"><a href="Addnews.aspx">发表新闻</a></li>
+                <li style="width:25%"><a href="Editnews.aspx">新闻管理</a></li>
+                <li style="width:25%"><a href="xgmm.aspx">密码修改</a></li>
+            </ul>
+        </div>
+        <div id="datu">
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/images/datu.png" Width="100%" />
+        </div>
+        
+        <div id="contents" style="padding:40px 0;width:1500px;">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+            <div style="clear:both"></div>
+        </div>
+        <div id="foot">
+            <img src="../images/foot.png" style="width:100%"/>
+        </div>
+    </form>
+</body>
+</html>
